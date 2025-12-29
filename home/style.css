@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+.main-header {
+  background: #111;
+  padding: 18px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #00e5ff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 0.95rem;
+}
+
+.hero-area {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 90px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-box {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-box h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: #00e5ff;
+  padding: 12px 30px;
+  color: #000;
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.feature-strip {
+  background: #00e5ff;
+  padding: 50px 20px;
+  text-align: center;
+  color: #000;
+}
+
+.footer-area {
+  background: #111;
+  color: #bbb;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #00e5ff;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media(max-width: 900px) {
+  .card-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .card-section {
+    grid-template-columns: 1fr;
+  }
+}
+.editor-picks {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.pick {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.subscribe-strip {
+  background: linear-gradient(135deg,#00e5ff,#4facfe);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sub-form {
+  margin-top: 20px;
+}
+
+.sub-form input {
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  width: 240px;
+}
+
+.sub-form button {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #111;
+  color: #fff;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+@media(max-width:800px){
+  .pick-grid{grid-template-columns:1fr;}
+}
